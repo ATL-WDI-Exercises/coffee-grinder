@@ -1,0 +1,201 @@
+<html>
+	<head>
+		<title>Coffee Grinder</title>
+		<link rel="stylesheet" href="coffee-grinder.css" />
+		<script src="coffee-grinder.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1 id="bean_counter">0 Beans</h1>
+			<h1>Coffee Grinder</h1>
+		</header>
+		<main>
+			<div class="exercise" id="exercise_1">
+				<h2>1. Variables</h2>
+				<p>Javascript insists that we define variables before we use them, otherwise we pollute our global scope.</p>
+				<pre>
+var num;
+num = 10;</pre>
+				<p>Define the local variable <code>price</code> with the value of 9.95.</p>
+				<textarea></textarea>
+				<div class="notice"></div>
+				<button class="next" onclick="coffee_grinder.next();">Try it!</button>
+			</div>
+			<div class="exercise" id="exercise_2">
+				<h2>2. Conditionals</h2>
+				<p>Similar to Ruby; however, in Javascript conditionals require parenthesis and the code is enclosed in curly-braces <b>{}</b>.</p>
+				<p>Remember, the comparative operators: <code>&lt;</code>, <code>==</code>, <code>&gt;</code>, <code>!=</code>, should all work.  There is also <code>===</code> that works similarly to <code>==</code>, and <code>!==</code> but for this exercise either will do.</p>
+				<pre>
+if (price &gt; 9.95) {
+&nbsp;&nbsp;alert('Too Expensive!');
+}</pre>
+				<p>Write a conditional that alerts <code>'The price is just right'</code> if the <code>price</code> is exactly 9.95</p>
+				<textarea></textarea>
+				<div class="notice"></div>
+				<button class="next" onclick="coffee_grinder.next();">Try it!</button>
+			</div>
+			<div class="exercise" id="exercise_3">
+				<h2>3. Arithmetic</h2>
+				<p>We can add, subtract, multiply and divide numbers using <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> respectively.</p>
+				<pre>
+var add = 10 + 5;
+var mult = 10 * 5;</pre>
+				<p>Divide 32 by 4 and store the result as <code>result</code></p>
+				<textarea></textarea>
+				<div class="notice"></div>
+				<button class="next" onclick="coffee_grinder.next();">Try it!</button>
+			</div>
+			<div class="exercise" id="exercise_4">
+				<h2>4. Strings</h2>
+				<p>In Javascript, strings work very much like they do in Ruby.  Javascript does <b>NOT</b> support string interpolation though, so you have to use the concatenation operator <code>+</code> to combine strings</p>
+				<pre>
+var first_name = 'Jaden';
+var last_name = 'Carver;</pre>
+				<p>Create a <code>full_name</code> variable that is a combination of <code>first_name</code> and <code>last_name</code> with a space in-between.</p>
+				<textarea></textarea>
+				<div class="notice"></div>
+				<button class="next" onclick="coffee_grinder.next();">Try it!</button>
+			</div>
+			<div class="exercise" id="exercise_5">
+				<h2>5. String Functions</h2>
+				<p>Javascript includes a variety of string functions:</p>
+				<dl>
+					<dt><code>'submarine'.indexOf('marine')</code></dt>
+					<dd>Returns the <code>index</code> where the substring 'marine' was found in 'submarine'</dd>
+					<dt><code>'Jaden Carver'.split(' ')</code></dt>
+					<dd>Splits the string into an array where each element is a string containing the text between the given separator.</dd>
+					<dt><code>'Duck Duck Duck Duck Goose').replace('Goose', 'Duck');</code></dt>
+					<dd>Searches the string for the substring 'Goose' and replaces it with the 'Duck'</dd>
+				</dl>
+				<pre>
+var full_name = 'Jaden Carver';</pre>
+				<p>Split <code>full_name</code> into two strings and store the result as <code>name_parts</code>:</p>
+				<textarea></textarea>
+				<div class="notice"></div>
+				<button class="next" onclick="coffee_grinder.next();">Try it!</button>
+			</div>
+			<div class="exercise" id="exercise_6">
+				<h2>6. Arrays</h2>
+				<p>Arrays work very similarly to Ruby's Arrays.</p>
+				<pre>
+var my_array = [1,2,3];
+alert(my_array[0]); // will alert '1'</pre>
+				<p>Create an Array containing strings for the primary colors (red, yellow, blue) and store it as <code>result</code>:</p>
+				<textarea></textarea>
+				<div class="notice"></div>
+				<button class="next" onclick="coffee_grinder.next();">Try it!</button>
+			</div>
+			<div class="exercise" id="exercise_7">
+				<h2>7. Array Functions</h2>
+				<dl>
+					<dt><code>concat()</code></dt>
+					<dd>Joins two or more arrays</dd>
+					<dt><code>indexOf()</code></dt>
+					<dd>Search the array for an element and returns its position</dd>
+					<dt><code>join()</code></dt>
+					<dd>Joins all elements of an array into a string</dd>
+					<dt><code>pop()</code></dt>
+					<dd>Removes the last element of an array, and returns that element</dd>
+					<dt><code>shift()</code></dt>
+					<dd>Removes the first element of an array, and returns that element</dd>
+					<dt><code>push()</code></dt>
+					<dd>Adds new elements to the end of an array, and returns the new length</dd>
+					<dt><code>sort()</code></dt>
+					<dd>Sorts the elements of an array</dd>
+				</dl>
+				<pre>
+var students = [
+	'Kevin','Andrew','Caleb','Allan','Colin','Jonathan','Robin','Sage','Sonya','Sofia','George',
+	'Michael','Jonathan','Tayef','Tamara','Sam','Christopher','Chelsea','Jesse','Zack','Akosua',
+	'Vienne','Izabella','Dan','Alex','Anya','Mike','Remina','Jessie'
+]</pre>
+				<p>Sort the students names in the following array, <strong>then</strong>:</p>
+				<ol>
+					<li>Pop the student at the end of the array and store as <code>last</code></li>
+					<li>Shift the student at the beginning the array and store as <code>first</code></li>
+					<li>Find the index of the student named Dan and store as <code>index</code></li>
+				</ol>
+				<textarea></textarea>
+				<div class="notice"></div>
+				<button class="next" onclick="coffee_grinder.next();">Try it!</button>
+			</div>
+			<div class="exercise" id="exercise_8">
+				<h2>8. Math Functions</h2>
+				<p>
+					Javascript puts Math-related functions into a Math module. Since front-end can sometimes
+					involve geometry, trigonometry, etc it may be useful to know where to find these
+					functions, as well as random() and round() being the most noteable.
+				</p>
+				<dl>
+					<dt><code>Math.min(n1, n2, n3)</code></dt>
+					<dd>Find the lowest value in a list of arguments</dd>
+					<dt><code>Math.max(n1, n2, n3)</code></dt>
+					<dd>Find the highest value in a list of arguments</dd>
+					<dt><code>Math.random()</code></dt>
+					<dd>A random number between 0.0 and 1.0</dd>
+					<dt><code>Math.round(n)</code></dt>
+					<dd>The value of a number rounded to the nearest integer</dd>
+					<dt><code>Math.ceil(n)</code></dt>
+					<dd>The value of a number rounded <em>up</em> to the nearest integer</dd>
+					<dt><code>Math.floor(n)</code></dt>
+					<dd>The value of a number rounded <em>down</em> to the nearest integer</dd>
+					<dt><code>Math.sin(n)</code></dt>
+					<dd>The sine of a number.</dd>
+					<dt><code>Math.cos()</code></dt>
+					<dd>The cosine of a number.</dd>
+					<dt><code>Math.tan()</code></dt>
+					<dd>The tangent of a number.</dd>
+				</dl>
+				<p>Given a variable <code>price</code> round it to the nearest cent and store as <code>result</code>.</p>
+				<details>
+					<summary>Need a Hint? (open to view)</summary>
+					<p>Try multiplying the number by 100 before calling Math.round(), then <em>divide</em> the result by 100.</code>
+				</details>
+				<textarea></textarea>
+				<div class="notice"></div>
+				<button class="next" onclick="coffee_grinder.next();">Try it!</button>
+			</div>
+			<div class="exercise" id="exercise_9">
+				<h2>9. Functions</h2>
+				<p>Javascript implements functions such as:</p>
+				<pre>
+function flip(element) {
+&nbsp;&nbsp;element.style.transform = 'rotate(180deg)';
+}
+flip(element);</pre>
+				<p>
+					Functions are incredibly versatile allowing for multiple programming styles,
+					such as Object Oriented Programming and Functional Programming. (More on that later).
+				</p>
+				<p>
+					Note: Unlike Ruby, you must explicitly call <code>return</code> with the result of your function.
+				<p>
+					Write a function named <code>alpha_sort</code> that takes a string and <code>return</code>s a new
+					string where each letter in the string has been sorted alphabetically.
+				</p>
+				<details>
+					<summary>Need a Hint? (open to view)</summary>
+					<p>You can use the string functions as follows: <code>'some-string'.split('').sort().join('')</code>
+				</details>
+				<textarea></textarea>
+				<div class="notice"></div>
+				<button class="next" onclick="coffee_grinder.next();">Try it!</button>
+			</div>
+			<div class="exercise">
+				<h1>CONGRATULATIONS</h1>
+				<p><big>You have completed the Coffee Grinder challenge!</big></p>
+				<br />
+				<p>
+					Javascript is an ever-rising star in many programming circles, on both the front-end and
+					back-end.  It is a touch more finicky than Ruby in regards to syntax, and lacking the
+					enforced structures in Ruby (eg class, module, etc) can be more difficult to read, but it
+					is fantastic for interface design, where it's performance and asynchronous nature really shines.
+				</p>
+				<h3 style="margin-left: 80%;">Enjoy!</h3>
+				<center><img src="coffee.png" /></center>
+			</div>
+		</main>
+		<footer>
+		</footer>
+	</body>
+</html>
